@@ -15,16 +15,16 @@ public class Splits_happen {
 		a = s.toCharArray();	// makes the string into an array of character inputs (i.e. each roll is a separate entry in the array)
 		
 		//  for loop for the first 9 frames and the 1st roll of the 10th frame
-		first_Nine(a);
+		Frames(a);
 		
 		// runs the method for the last 2 rolls in the 10th frame
-		final_Frame(a);
+		final_Two(a);
 		
 		// prints out the final score for the player
 		System.out.println(total_score);
 	}
 	
-	public static void first_Nine(char[] a){
+	public static void Frames(char[] a){
 		
 		for( int i = 0; i < a.length-2; i++){
 			
@@ -118,7 +118,7 @@ public class Splits_happen {
 	}
 	
 	// Method that deals with the final 2 bowls of the 10th frame
-	public static void final_Frame(char[] a){
+	public static void final_Two(char[] a){
 		
 		// Runs a for loop for the final 2 rolls
 		for( int j = a.length-2; j < a.length; j++){
