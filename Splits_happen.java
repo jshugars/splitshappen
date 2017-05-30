@@ -15,6 +15,17 @@ public class Splits_happen {
 		a = s.toCharArray();	// makes the string into an array of character inputs (i.e. each roll is a separate entry in the array)
 		
 		//  for loop for the first 9 frames and the 1st roll of the 10th frame
+		first_Nine(a);
+		
+		// runs the method for the last 2 rolls in the 10th frame
+		final_Frame(a);
+		
+		// prints out the final score for the player
+		System.out.println(total_score);
+	}
+	
+	public static void first_Nine(char[] a){
+		
 		for( int i = 0; i < a.length-2; i++){
 			
 			// If the player rolls a strike
@@ -40,12 +51,6 @@ public class Splits_happen {
 				num(j);
 			}
 		}
-		
-		// runs the method for the last 2 rolls in the 10th frame
-		final_Frame(a);
-		
-		// prints out the final score for the player
-		System.out.println(total_score);
 	}
 	
 	public static void strike(char b,char c){
